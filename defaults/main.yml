@@ -17,3 +17,6 @@ fluentd_service_enabled: yes # yes, no
 # Templates path
 fluentd_playbook_templates_path: "{{ playbook_dir }}/templates/fluentd"
 fluentd_service_template_path: fluentd/fluentd.service.j2
+
+# Service parameters
+fluentd_nofile: 65536
